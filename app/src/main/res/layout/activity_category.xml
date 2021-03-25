@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".owner.CategoryActivity">
+
+    <TextView
+        android:id="@+id/category_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Add New Product"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:gravity="center_horizontal"/>
+
+    <LinearLayout
+        android:id="@+id/category_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/category_title"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/robes"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/robe"
+            />
+
+        <ImageView
+            android:id="@+id/saree_jacket"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/jacket"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/category_layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/category_layout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:layout_marginTop="80dp">
+
+        <ImageView
+            android:id="@+id/dress"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/dress"
+            />
+
+        <ImageView
+            android:id="@+id/lehenga"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:src="@drawable/lehenga"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

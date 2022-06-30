@@ -2,27 +2,62 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidapp">
 
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".customer.BollywoodStyledLehengaActivity"></activity>
+        <activity android:name=".customer.DesignerLehengaActivity" />
+        <activity android:name=".customer.PinkLaceSareeJacketActivity" />
+        <activity android:name=".customer.PinkCropTopActivity" />
+        <activity android:name=".customer.PartyDressActivity" />
+        <activity android:name=".customer.LongDressActivity" />
+        <activity android:name=".customer.CasualDressActivity" />
+        <activity android:name=".customer.BridesmaidDressActivity" />
+        <activity android:name=".customer.FloralSkirtActivity" />
+        <activity android:name=".customer.BlackSkirtActivity" />
+        <activity android:name=".AdminMsgActivity" />
+        <activity android:name=".customer.MeasurementsActivity" />
+        <activity android:name=".ResetActivity" />
+        <activity android:name=".ForgotPasswordInt1" />
+        <activity android:name=".owner.DesignerOrder_Details" />
+        <activity android:name=".owner.DesignerOrderActivity" />
+        <activity android:name=".SizeChartActivity" />
+        <activity android:name=".customer.OrderActivity" />
+        <activity android:name=".customer.OrderPlacedActivity" />
         <activity
-            android:name=".owner.OwnerHomeActivity"
-            android:label="@string/title_activity_owner_home"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:name=".WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".owner.OwnerPanelActivity" />
         <activity
-            android:name=".owner.OwnerNavigationActivity"
-            android:label="@string/title_activity_owner_navigation"></activity>
-        <activity android:name=".owner.CategoryActivity" />
+            android:name=".customer.ProductSingleViewActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".owner.Add_Product_Activity" />
         <activity
             android:name=".customer.MainActivity"
             android:label="@string/title_activity_main" />
-        <activity android:name=".customer.SignUpActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".customer.SignUpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SplashScreenActivity"
             android:theme="@style/AppTheme.NoActionBar">
@@ -32,6 +67,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/AppTheme" />
     </application>
 
 </manifest>

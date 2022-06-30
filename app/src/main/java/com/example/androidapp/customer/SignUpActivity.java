@@ -51,15 +51,12 @@ public class SignUpActivity extends AppCompatActivity {
                 confirmPassword = signUpConfirmPassword.getText().toString().trim();
 
                  if(name.equals("")|| email.equals("")|| userName.equals("")|| password.equals("")|| confirmPassword.equals("")){
-                     Toast.makeText(SignUpActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show();
-                 }
-                 else
-                 {
-                     if(password.equals(confirmPassword))
-                     {
+                     Toast.makeText(SignUpActivity.this, "Please fill all the fields", Toast.LENGTH_SHORT).show(); }
+                 else {
+                     if(password.equals(confirmPassword)) {
                          Boolean checkusername = db.checkUsername(userName);
                          if (checkusername==false) {
-                             Toast.makeText(SignUpActivity.this, "", Toast.LENGTH_SHORT).show();
+                             //Toast.makeText(SignUpActivity.this, "", Toast.LENGTH_SHORT).show();
                              Boolean insert = db.insertUser(userName, name, email, password);
                              if (insert == true) {
                                  Toast.makeText(SignUpActivity.this, "Registered Successfully", Toast.LENGTH_SHORT).show();
@@ -69,14 +66,14 @@ public class SignUpActivity extends AppCompatActivity {
                                  Toast.makeText(SignUpActivity.this, "Registered Failed", Toast.LENGTH_SHORT).show();
                              }
                          }
-                         else
-                         {
+                         else {
                              Toast.makeText(SignUpActivity.this, "User already exists!", Toast.LENGTH_SHORT).show();
                          }
                      }
                      else
                      {
-                         Toast.makeText(SignUpActivity.this, "Password and Confirm Password fields are not matching!", Toast.LENGTH_SHORT).show();
+                         Toast.makeText(SignUpActivity.this, "Password and Confirm Password fields are not matching!",
+                                 Toast.LENGTH_SHORT).show();
                      }
                  }
             }

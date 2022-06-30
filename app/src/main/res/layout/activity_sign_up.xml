@@ -8,22 +8,24 @@
     android:paddingRight="10dp"
     android:paddingLeft="10dp"
     android:orientation="vertical"
+    android:background="@drawable/background6"
     tools:context=".customer.SignUpActivity">
 
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="228dp"
-        android:layout_height="194dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
-        android:background="@drawable/logo" />
+        android:background="@drawable/logo"
+        />
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="464dp"
-        android:layout_marginTop="50dp">
+        android:layout_marginTop="20dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -36,7 +38,9 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:hint="Name"
+                android:textColorHint="#000000"
                 android:inputType="none"
+                android:textStyle="bold"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
 
@@ -47,7 +51,9 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:hint="Email"
+                android:textColorHint="#000000"
                 android:inputType="none"
+                android:textStyle="bold"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
 
@@ -57,7 +63,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
+                android:textColorHint="#000000"
                 android:hint="Username"
+                android:textStyle="bold"
                 android:inputType="none"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
@@ -69,11 +77,12 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:hint="Password"
+                android:textColorHint="#000000"
                 android:inputType="none"
+                android:textStyle="bold"
                 android:password="true"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
-
 
             <EditText
                 android:id="@+id/signup_confirm_pwd"
@@ -81,7 +90,9 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="10dp"
                 android:hint="Confirm Password"
+                android:textColorHint="#000000"
                 android:inputType="none"
+                android:textStyle="bold"
                 android:password="true"
                 android:paddingLeft="10dp"
                 android:textSize="20sp" />
@@ -92,31 +103,29 @@
                 android:layout_margin="10dp"
                 android:elevation="8dp"
                 app:cardCornerRadius="25dp">
-
                 <TextView
                     android:id="@+id/btn_register"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#97918E"
+                    android:background="#1B1A1A"
                     android:clickable="false"
                     android:gravity="center"
                     android:text="REGISTER"
                     android:textColor="#ffffff"
                     android:textSize="20sp" />
             </androidx.cardview.widget.CardView>
-
             <TextView
                 android:id="@+id/link_signin"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginBottom="20dp"
                 android:clickable="true"
                 android:focusable="true"
                 android:gravity="center|bottom"
                 android:text="I am a Member"
-                android:textColor="#B15075"
-                android:textSize="18sp"
+                android:textColor="#C33224"
+                android:textSize="19sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </ScrollView>

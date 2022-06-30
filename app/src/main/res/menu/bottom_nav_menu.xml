@@ -12,18 +12,8 @@
         android:title="@string/title_product" />
 
     <item
-        android:id="@+id/navigation_measurements"
-        android:icon="@drawable/ic_baseline_camera_24"
-        android:title="@string/measurements" />
-
-    <item
-        android:id="@+id/navigation_orders"
-        android:icon="@drawable/ic_baseline_order"
-        android:title="@string/title_orders" />
-
-    <item
-        android:id="@+id/navigation_profile"
-        android:icon="@drawable/ic_baseline_profile"
-        android:title="@string/profile" />
+        android:id="@+id/navigation_message"
+        android:icon="@drawable/ic_baseline_message_24"
+        android:title="@string/title_message" />
 
 </menu>

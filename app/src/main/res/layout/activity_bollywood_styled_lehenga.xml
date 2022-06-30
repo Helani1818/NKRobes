@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorAccent"
+    android:id="@+id/product_bollywoodStyledLehenga"
+    tools:context=".customer.BollywoodStyledLehengaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/display_product_image10"
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:cropToPadding="false"
+            android:layout_gravity="center"
+            android:src="@drawable/bollywoodstylelehenga"
+            android:layout_marginTop="20dp"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:stretchColumns="2">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/product_details10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="15dp"
+                    android:text="Product Details"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginLeft="100dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Name"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/display_product_name10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:padding="10dp"
+                    android:text="Bollywood Styled Lehenga"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="18dp" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Description"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/display_product_description10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="This is made by maroon colour Brocade and velvet material."
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Product Price"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/display_product_price10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="10dp"
+                    android:text="Rs. 14 500"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

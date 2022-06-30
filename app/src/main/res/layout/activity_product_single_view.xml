@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:background="@color/colorAccent"
+    android:id="@+id/product_singleView"
+    tools:context=".customer.ProductSingleViewActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/display_product_image"
+                android:layout_width="400dp"
+                android:layout_height="400dp"
+                android:cropToPadding="false"
+                android:layout_gravity="center"
+                android:src="@drawable/product_image"
+                android:layout_marginTop="20dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:stretchColumns="2">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/product_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:layout_weight="1"
+                        android:gravity="top"
+                        android:padding="15dp"
+                        android:text="Product Details"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginLeft="100dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Product Name"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/display_product_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:text="Product Name"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal" />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/product_takeMeasurements"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Let's take Measurements"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:textSize="20dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+</RelativeLayout>

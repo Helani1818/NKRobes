@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".customer.MeasurementsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:id="@+id/measurements_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center"
+            android:text="Let us Find the Best Design for You"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#B62D7F"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/measurements_description1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="5dp"
+            android:padding="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            android:text="Please upload an image of yours to the below image view."
+            />
+
+        <TextView
+            android:id="@+id/measurements_description2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#BD1414"
+            android:textSize="18sp"
+            android:text="Make sure to wear a dark coloured garment which shows your shape and the Background should be a light and clear background"
+            />
+
+        <LinearLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <ImageView
+                android:id="@+id/measure_image"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profile">
+            </ImageView>
+
+            <Button
+                android:id="@+id/measure_button"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:text="Measure"
+                android:layout_gravity="center"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="30dp"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:textColor="#ffffff"
+                android:background="@drawable/button"/>
+
+        </LinearLayout>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/enter_measurements"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="3"
+                    android:layout_weight="1"
+                    android:gravity="top"
+                    android:padding="5dp"
+                    android:text="Body Measurements"
+                    android:textSize="24dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="60dp"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/height">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Height"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/height_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:inputType="number"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="height measurement"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Waist"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/waist_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:hint="waist measurement"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/bust">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Bust"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/bust_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:hint="bust measurement"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/neck">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Neck"
+                    android:textAlignment="center"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal" />
+
+                <EditText
+                    android:id="@+id/neck_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:inputType="number"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:hint="neck measurement"
+                    android:textSize="18dp"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:gravity="center_horizontal" />
+            </TableRow>
+
+            <TableRow android:id="@+id/hip">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Hip"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/hip_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:hint="hip measurement"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+            <TableRow android:id="@+id/thigh">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Thigh"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/thigh_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:hint="thigh measurement"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:text="Neck to Hip Length"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:textStyle="bold"
+                    />
+
+                <EditText
+                    android:id="@+id/neckToHip_measurement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:inputType="number"
+                    android:hint="neck to hip measurement"
+                    android:textAlignment="center"
+                    android:gravity="center_horizontal"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/placetheorder_button"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
+            android:text="Place Your Order"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/button"/>
+
+    </LinearLayout>
+
+</ScrollView>

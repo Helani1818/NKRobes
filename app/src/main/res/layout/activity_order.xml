@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:orientation="vertical"
+    android:background="@color/colorAccent"
+    android:id="@+id/order_layout"
+    tools:context=".customer.OrderActivity">
+
+    <TextView
+        android:id="@+id/order_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Order Details"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:textSize="30sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="2"
+               android:layout_gravity="center">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/enter_details"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Your Details"
+                        android:textSize="22dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Full Name"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal" />
+
+                    <EditText
+                        android:id="@+id/order_customerName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:inputType="text"
+                        android:hint="Full Name"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Address"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/order_customerAddress"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:hint="Address"
+                        android:inputType="textMultiLine"
+                        android:padding="15dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="15dp"
+                        android:text="Telephone Number"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <EditText
+                        android:id="@+id/order_customerTelnumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="15dp"
+                        android:inputType="number"
+                        android:hint="Telephone Number"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:stretchColumns="2"
+                android:layout_gravity="center">
+
+                <TableRow>
+                    <TextView
+                        android:id="@+id/enter_measurements"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_span="3"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Measurements"
+                        android:textSize="24dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="60dp"
+                        />
+                </TableRow>
+
+                <TableRow android:id="@+id/height">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Height"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/order_height_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="height measurement"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal" />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Waist"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/order_waist_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:hint="waist measurement"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow android:id="@id/bust">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Bust"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/order_bust_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="bust measurement"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        />
+                </TableRow>
+
+
+
+                <TableRow android:id="@+id/neck">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Neck"
+                        android:textAlignment="center"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal" />
+
+                    <TextView
+                        android:id="@+id/order_neck_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="neck measurement"
+                        android:textSize="18dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:gravity="center_horizontal" />
+                </TableRow>
+
+                <TableRow android:id="@+id/hip">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Hip"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/order_hip_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:hint="hip measurement"
+                        android:inputType="number"
+                        android:padding="10dp"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow android:id="@+id/thigh">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Thigh"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/order_thigh_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="thigh measurement"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        />
+                </TableRow>
+
+                <TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="Neck to Hip Length"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:id="@+id/order_neckToHip_measurement"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:padding="10dp"
+                        android:inputType="number"
+                        android:hint="Neck To Hip measurement"
+                        android:textAlignment="center"
+                        android:gravity="center_horizontal"
+                        android:textSize="18dp"
+                        android:textColor="#000000"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+            <EditText
+                android:id="@+id/order_orderDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Order Description"
+                android:textSize="18dp"
+                android:inputType="textMultiLine"
+                android:textColor="#0E090A"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp" />
+
+            <TextView
+                android:id="@+id/measurements_description2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="#BD1414"
+                android:textSize="18sp"
+                android:text="Enter an similar image of the design you want if you have"
+                />
+
+            <ImageView
+                android:id="@+id/design"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="60dp"
+                android:layout_marginRight="60dp"
+                android:src="@drawable/product_image"
+                />
+
+            <Button
+                android:id="@+id/order_btn"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@drawable/button"
+                android:padding="5dp"
+                android:layout_gravity="center"
+                android:text="Order"
+                android:textColor="#ffffff"
+                android:textSize="20dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

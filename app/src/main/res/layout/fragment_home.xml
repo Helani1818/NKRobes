@@ -1,0 +1,666 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="N K Robes and Designs"
+                android:textAlignment="center"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:textSize="36dp"
+                android:textStyle="bold"
+                android:textColor="#C88B28"/>
+
+            <ImageView
+                android:id="@+id/login_imageView"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/logo" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/skirt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Skirts"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textColor="#000000" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/skirts_card_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/skirt_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/blackskirt"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/skirt_1_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Black Skirt"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/skirt_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/floralskirt"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="3">
+
+                                    <TextView
+                                        android:id="@+id/skirt_2_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Floral Skirt"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/dress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Dresses"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/dress_card_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/dress_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/bridesmaiddress"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/dress_1_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Bridesmaid Dress"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/dress_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/printedcasualdress"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/dress_2_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Floral Printed Casual Dress"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/dress_3"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/longdress"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/dress_3_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Casual Long Dress"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/dress_4"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/partydress"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/dress_4_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Party Dress"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/blouse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Blouses"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textColor="#000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/blouse_card_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blouse_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/pinkblouse"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/blouse_1_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Pink Crop Top"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/blouse_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/pinklacesareejacket"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:id="@+id/blouse_2_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Pink Lace Saree Jacket"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/lehenga"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:text="Lehengas"
+                    android:clickable="true"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:textStyle="bold"
+                    android:textSize="26dp"
+                    android:textColor="#000000"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="2">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/lehengas_card_one"
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/lehenga_1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/designerlehenga"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:paddingRight="2dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/lehenga_1_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Designer Lehenga"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="250dp"
+                            android:layout_gravity="center"
+                            android:layout_margin="10dp"
+                            android:layout_weight="1"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="250dp"
+                                android:layout_gravity="center"
+                                android:gravity="top"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/lehenga_2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="200dp"
+                                    android:layout_gravity="top"
+                                    android:background="@drawable/bollywoodstylelehenga"
+                                    />
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:weightSum="1">
+
+                                    <TextView
+                                        android:id="@+id/lehenga_2_name"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"
+                                        android:layout_marginTop="10dp"
+                                        android:textColor="#000000"
+                                        android:textStyle="bold"
+                                        android:textSize="18dp"
+                                        android:text="Bollywood Styled Lehenga"
+                                        android:textAlignment="center"
+                                        android:gravity="center_horizontal" />
+
+
+                                </LinearLayout>
+
+                            </LinearLayout>
+
+                        </androidx.cardview.widget.CardView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
